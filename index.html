@@ -1,0 +1,1227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Portfolio — Graphic Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#services" onclick="closeMobile()">Services</a>
+      <a href="#portfolio" onclick="closeMobile()">Portfolio</a>
+      <a href="#pricing" onclick="closeMobile()">Pricing</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="inner">
+        <a href="#" class="nav-logo">Studio <span>.</span> A</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">
+          Get in Touch
+          <span class="nav-cta-icon">
+            <svg viewBox="0 0 12 12">
+              <path
+                d="M2 10L10 2M10 2H4M10 2v6"
+                stroke="white"
+                stroke-width="1.8"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+        </a>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="inner">
+          <div class="hero-eyebrow">Available for new projects</div>
+          <h1 class="hero-title">
+            Designs Built To <span class="orange">Dominate</span> The Digital
+            Space
+          </h1>
+          <div class="hero-bottom">
+            <p class="hero-sub">
+              I create bold, modern, and high-impact graphic designs that help
+              brands capture attention, build authority, and stand out in
+              competitive markets. Every design is crafted with creativity,
+              strategy, and purpose.
+            </p>
+            <div class="hero-ctas">
+              <a href="#portfolio" class="btn-primary">
+                View My Work
+                <span class="btn-icon">
+                  <svg viewBox="0 0 12 12" width="12" height="12">
+                    <path
+                      d="M2 10L10 2M10 2H4M10 2v6"
+                      stroke="white"
+                      stroke-width="1.8"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a href="#contact" class="btn-secondary">Let's Work Together</a>
+            </div>
+          </div>
+          <div class="hero-services-bar">
+            <div class="hero-service-item">
+              <span class="hero-service-num">#01</span>
+              <span class="hero-service-name">Brand Identity</span>
+            </div>
+            <div class="hero-service-item">
+              <span class="hero-service-num">#02</span>
+              <span class="hero-service-name">Social Media Design</span>
+            </div>
+            <div class="hero-service-item">
+              <span class="hero-service-num">#03</span>
+              <span class="hero-service-name">Flyer & Promo</span>
+            </div>
+            <div class="hero-service-item">
+              <span class="hero-service-num">#04</span>
+              <span class="hero-service-name">Print & Packaging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        Scroll to explore
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-grid reveal">
+        <div class="about-left">
+          <div class="section-label">Who I Am</div>
+          <h2 class="section-title">
+            Design with Purpose<br />and Personality
+          </h2>
+          <p class="about-text">
+            I'm a passionate Graphic Designer focused on creating visually
+            striking and meaningful designs that leave lasting impressions. From
+            branding and promotional materials to social media creatives and
+            digital campaigns, I help businesses transform ideas into powerful
+            visual experiences.
+          </p>
+          <p class="about-text">
+            My approach combines creativity with strategy, ensuring every design
+            not only looks great but also communicates effectively and connects
+            with the right audience.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag">Brand Identity</span>
+            <span class="about-tag">Typography</span>
+            <span class="about-tag">Motion Graphics</span>
+            <span class="about-tag">Art Direction</span>
+            <span class="about-tag">Print Design</span>
+            <span class="about-tag">Digital Campaigns</span>
+          </div>
+        </div>
+        <div class="about-portrait reveal reveal-delay-2">
+          <div class="about-portrait-inner">
+            <div class="about-portrait-tag">
+              <p>Graphic Designer</p>
+              <strong>Based in Nigeria 🇳🇬</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-header reveal">
+        <div>
+          <div class="section-label">Recent Work</div>
+          <h2 class="section-title1">Latest Projects</h2>
+        </div>
+        <p class="section-subtitle">
+          A look at what I've been working on lately — designs, stories, and
+          creative partnerships.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal reveal-delay-1">
+          <div class="portfolio-card-bg pc-1">
+            <img src="./images/img1.jpg" alt="Fashion Brand Campaign" />
+          </div>
+          <div class="portfolio-card-overlay">
+            <div>
+              <div class="portfolio-card-label">Brand Identity Design</div>
+              <div class="portfolio-card-title">Fashion Brand Campaign</div>
+              <div class="portfolio-card-desc">
+                Bold promotional visuals designed to increase engagement and
+                strengthen brand identity.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal-delay-2">
+          <div class="portfolio-card-bg pc-2">
+            <img src="./images/Flyer 2.jpg" alt="Restaurant Social Media" />
+          </div>
+          <div class="portfolio-card-overlay">
+            <div>
+              <div class="portfolio-card-label">Social Media Design</div>
+              <div class="portfolio-card-title">Restaurant Social Media</div>
+              <div class="portfolio-card-desc">
+                Creative marketing visuals tailored to boost online presence and
+                customer interaction.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal-delay-3">
+          <div class="portfolio-card-bg pc-3">
+            <img src="./images/img2.jpg" alt="Music Cover Artwork" />
+          </div>
+          <div class="portfolio-card-overlay">
+            <div>
+              <div class="portfolio-card-label">Creative Direction</div>
+              <div class="portfolio-card-title">Music Cover Artwork</div>
+              <div class="portfolio-card-desc">
+                Creative cover art concepts crafted to visually represent sound,
+                mood, and identity.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-grid-alt">
+        <div class="portfolio-card portfolio-card-tall reveal">
+          <div class="portfolio-card-bg pc-4">
+            <img
+              src="./images/Honey-Cakes-Val.jpg"
+              alt="Beauty Brand Identity"
+            />
+          </div>
+          <div class="portfolio-card-overlay">
+            <div>
+              <div class="portfolio-card-label">Brand Identity</div>
+              <div class="portfolio-card-title">Beauty Brand Identity</div>
+              <div class="portfolio-card-desc">
+                A premium and elegant branding system designed to position the
+                brand professionally.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card portfolio-card-wide reveal reveal-delay-2">
+          <div class="portfolio-card-bg pc-5">
+            <img
+              src="./images/MBPI-valentines.png"
+              alt="Event Flyer Collection"
+            />
+          </div>
+          <div class="portfolio-card-overlay">
+            <div>
+              <div class="portfolio-card-label">Flyer & Promotional</div>
+              <div class="portfolio-card-title">Event Flyer Collection</div>
+              <div class="portfolio-card-desc">
+                Eye-catching event designs created to maximize visibility and
+                audience attention.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal reveal-delay-1">
+          <div class="portfolio-card-bg pc-1">
+            <img
+              src="./images/call-for-volunteer1.png"
+              alt="Call for Volunteers"
+            />
+          </div>
+          <div class="portfolio-card-overlay">
+            <div>
+              <div class="portfolio-card-label">Brand Identity Design</div>
+              <div class="portfolio-card-title">Call for Volunteers</div>
+              <div class="portfolio-card-desc">
+                Bold promotional visuals designed to increase engagement and
+                strengthen brand identity.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal-delay-2">
+          <div class="portfolio-card-bg pc-2">
+            <img src="./images/April.jpg" alt="April Campaign" />
+          </div>
+          <div class="portfolio-card-overlay">
+            <div>
+              <div class="portfolio-card-label">Social Media Design</div>
+              <div class="portfolio-card-title">April Campaign</div>
+              <div class="portfolio-card-desc">
+                Creative marketing visuals tailored to boost online presence and
+                customer interaction.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal-delay-3">
+          <div class="portfolio-card-bg pc-3">
+            <img src="./images/Easter Flyer.jpg" alt="Easter Flyer" />
+          </div>
+          <div class="portfolio-card-overlay">
+            <div>
+              <div class="portfolio-card-label">Creative Direction</div>
+              <div class="portfolio-card-title">Easter Flyer</div>
+              <div class="portfolio-card-desc">
+                Creative cover art concepts crafted to visually represent sound,
+                mood, and identity.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="services-header reveal">
+        <div>
+          <div class="section-label">Services</div>
+          <h2 class="section-title">What I Can Help<br />You With</h2>
+        </div>
+        <p class="section-subtitle">
+          From strategy to visuals, I offer tailored creative services to help
+          your brand grow with clarity and impact.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <span class="service-num">#01</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"
+              />
+            </svg>
+          </div>
+          <h3 class="service-name">Brand Identity Design</h3>
+          <p class="service-desc">
+            Building strong and memorable brand visuals through logos, color
+            systems, typography, and comprehensive brand assets that make your
+            business unforgettable.
+          </p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <span class="service-num">#02</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <h3 class="service-name">Social Media Design</h3>
+          <p class="service-desc">
+            Creating scroll-stopping social media creatives designed to increase
+            engagement, strengthen brand presence, and drive meaningful audience
+            interaction.
+          </p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <span class="service-num">#03</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+          </div>
+          <h3 class="service-name">Flyer & Promotional Design</h3>
+          <p class="service-desc">
+            Designing bold promotional materials for events, businesses,
+            products, and campaigns that attract attention instantly and
+            communicate powerfully.
+          </p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <span class="service-num">#04</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+          </div>
+          <h3 class="service-name">Advertising Creatives</h3>
+          <p class="service-desc">
+            Modern ad designs tailored for digital marketing, online promotions,
+            and business visibility across all major platforms and formats.
+          </p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <span class="service-num">#05</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+          </div>
+          <h3 class="service-name">Print & Packaging Design</h3>
+          <p class="service-desc">
+            Professional packaging and print materials designed to enhance brand
+            image, elevate customer perception, and stand out on shelves and
+            in-hand.
+          </p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <span class="service-num">#06</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+          </div>
+          <h3 class="service-name">UI/UX Design</h3>
+          <p class="service-desc">
+            Designing intuitive and visually appealing user interfaces for
+            websites, apps, and digital platforms that enhance user experience,
+            engagement, and satisfaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WORK WITH ME -->
+    <section class="why" id="why">
+      <div class="why-grid">
+        <div class="philosophy-card reveal">
+          <div class="philosophy-quote">
+            "Good design is more than aesthetics. It is about communication,
+            emotion, and influence."
+          </div>
+          <p class="philosophy-sub">
+            I believe every brand deserves visuals that not only look
+            professional but also create connection, build trust, and leave a
+            powerful impression.
+          </p>
+        </div>
+        <div class="why-right reveal reveal-delay-2">
+          <div class="section-label">Why Work With Me</div>
+          <h2 class="section-title2">Creative Strategy<br />Meets Execution</h2>
+          <div class="why-list">
+            <div class="why-item">
+              <div class="why-check">
+                <svg viewBox="0 0 14 14"><path d="M2 7l4 4 6-6" /></svg>
+              </div>
+              <span class="why-item-text"
+                >Clean and modern design style that commands attention</span
+              >
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg viewBox="0 0 14 14"><path d="M2 7l4 4 6-6" /></svg>
+              </div>
+              <span class="why-item-text"
+                >Strong attention to detail in every pixel and decision</span
+              >
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg viewBox="0 0 14 14"><path d="M2 7l4 4 6-6" /></svg>
+              </div>
+              <span class="why-item-text"
+                >Creative and strategic thinking for real-world impact</span
+              >
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg viewBox="0 0 14 14"><path d="M2 7l4 4 6-6" /></svg>
+              </div>
+              <span class="why-item-text"
+                >Fast, professional workflow with reliable delivery</span
+              >
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg viewBox="0 0 14 14"><path d="M2 7l4 4 6-6" /></svg>
+              </div>
+              <span class="why-item-text"
+                >Designs focused on visibility, conversion, and impact</span
+              >
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg viewBox="0 0 14 14"><path d="M2 7l4 4 6-6" /></svg>
+              </div>
+              <span class="why-item-text"
+                >Consistent and high-quality delivery on every project</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-num" data-target="100">
+            <span>0</span><span style="color: var(--orange)">+</span>
+          </span>
+          <span class="stat-label">Designs Created</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <span class="stat-num" data-target="50">
+            <span>0</span><span style="color: var(--orange)">+</span>
+          </span>
+          <span class="stat-label">Brands Worked With</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <span class="stat-num" data-target="10">
+            <span>0</span><span style="color: var(--orange)">+</span>
+          </span>
+          <span class="stat-label">Industries Served</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <span class="stat-num" data-target="98">
+            <span>0</span><span style="color: var(--orange)">%</span>
+          </span>
+          <span class="stat-label">Client Satisfaction Rate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MORE WORK -->
+    <section class="more-work">
+      <div class="more-work-header reveal">
+        <div class="section-label">Behind the Designs</div>
+        <h2 class="section-title1">Curious What Else<br />I've Created?</h2>
+        <p>
+          Explore more brand identities, social media creatives, and digital
+          design work from my extended portfolio.
+        </p>
+        <a href="#contact" class="btn-primary" style="display: inline-flex">
+          See More Projects
+          <span class="btn-icon">
+            <svg viewBox="0 0 12 12" width="12" height="12">
+              <path
+                d="M2 10L10 2M10 2H4M10 2v6"
+                stroke="white"
+                stroke-width="1.8"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Carousel intentionally bleeds full width -->
+      <div class="carousel-wrapper reveal">
+        <div class="carousel-track" id="carouselTrack">
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #1a0800, #5c1e00)"
+          >
+            <img src="./images/Resin_1.jpg" alt="Packaging Design" />
+            <div class="carousel-item-label">Packaging Design</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #080018, #1e005c)"
+          >
+            <img
+              src="./images/Thank_you_Bagging-the-Future.png"
+              alt="Fashion Brand"
+            />
+            <div class="carousel-item-label">Fashion Brand</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #001808, #005c1e)"
+          >
+            <img src="./images/we are open.jpg" alt="Apparel Design" />
+            <div class="carousel-item-label">Apparel Design</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #18000a, #5c0020)"
+          >
+            <img src="./images/Easter Flyer.jpg" alt="Luxury Brand" />
+            <div class="carousel-item-label">Luxury Brand</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #100a00, #3a2800)"
+          >
+            <img src="./images/bukkyEP.jpg" alt="Street Culture" />
+            <div class="carousel-item-label">Street Culture</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #080808, #2a2a2a)"
+          >
+            <img src="./images/be visible.jpg" alt="Beverage Branding" />
+            <div class="carousel-item-label">Beverage Branding</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #1a0800, #5c1e00)"
+          >
+            <img src="./images/back.jpg" alt="Packaging Design" />
+            <div class="carousel-item-label">Packaging Design</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #080018, #1e005c)"
+          >
+            <img src="./images/Convocation Package.jpg" alt="Fashion Brand" />
+            <div class="carousel-item-label">Fashion Brand</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #001808, #005c1e)"
+          >
+            <img src="./images/Easter Flyer.jpg" alt="Apparel Design" />
+            <div class="carousel-item-label">Apparel Design</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #18000a, #5c0020)"
+          >
+            <img src="./images/Flyer 1.jpg" alt="Luxury Brand" />
+            <div class="carousel-item-label">Luxury Brand</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #100a00, #3a2800)"
+          >
+            <img src="./images/Flyer 2.jpg" alt="Street Culture" />
+            <div class="carousel-item-label">Street Culture</div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background: linear-gradient(135deg, #080808, #2a2a2a)"
+          >
+            <img src="./images/Greeting Card.jpg" alt="Beverage Branding" />
+            <div class="carousel-item-label">Beverage Branding</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-indicators reveal">
+        <div class="step">
+          <div class="step-num">#01</div>
+          <div class="step-label">Strategy & Planning</div>
+        </div>
+        <div class="step">
+          <div class="step-num">#02</div>
+          <div class="step-label">Design & Development</div>
+        </div>
+        <div class="step">
+          <div class="step-num">#03</div>
+          <div class="step-label">Launch & Growth</div>
+        </div>
+        <div class="step">
+          <div class="step-num">#04</div>
+          <div class="step-label">Ongoing Support</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS LIST -->
+    <section class="projects" id="projects">
+      <div class="reveal">
+        <div class="section-label">Recent Work</div>
+        <h2 class="section-title1" style="margin-bottom: 48px">
+          Latest Projects &<br />Collaborations
+        </h2>
+      </div>
+      <div class="project-item reveal">
+        <div class="project-item-left">
+          <div class="project-item-cat">Brand Identity Design</div>
+          <div class="project-item-name">NestByBukky</div>
+          <div class="project-item-desc">
+            Crafting cohesive and impactful visual identities for a boutique
+            creative studio.
+          </div>
+        </div>
+        <div class="project-view-btn">
+          <a href="project-nestbybukky.html">View work →</a>
+        </div>
+      </div>
+      <div class="project-item reveal reveal-delay-1">
+        <div class="project-item-left">
+          <div class="project-item-cat">Design</div>
+          <div class="project-item-name">MyBirthdayCharity</div>
+          <div class="project-item-desc">
+            Designed packaging creating a clean and refined visual identity for
+            a premium product line.
+          </div>
+        </div>
+        <div class="project-view-btn">
+          <a href="project-mybirthdaycharity.html">View work →</a>
+        </div>
+      </div>
+      <div class="project-item reveal reveal-delay-2">
+        <div class="project-item-left">
+          <div class="project-item-cat">Advertising Creatives</div>
+          <div class="project-item-name">Prospex Digitas</div>
+          <div class="project-item-desc">
+            Created high-impact visual ad creatives focusing on bold
+            storytelling and brand authority.
+          </div>
+        </div>
+        <div class="project-view-btn">
+          <a href="project-prospexdigitas.html">View work →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="pricing-header reveal">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-title">Simple Packages for<br />Every Stage</h2>
+        <p>
+          Transparent, flexible packages designed to fit your brand's ambitions
+          and budget.
+        </p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-plan">Starter</div>
+          <div class="pricing-price">$49 <span>/project</span></div>
+          <div class="pricing-tagline">Perfect for early-stage brands.</div>
+          <ul class="pricing-features">
+            <li>Logo Design</li>
+            <li>Color Palette</li>
+            <li>Basic Brand Guide</li>
+            <li>2 Social Templates</li>
+            <li>1 Revision Round</li>
+          </ul>
+          <button class="pricing-btn pricing-btn-dark">
+            Get in Touch
+            <span
+              class="btn-icon-sm"
+              style="
+                background: var(--orange);
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg viewBox="0 0 12 12" width="10" height="10">
+                <path
+                  d="M2 10L10 2M10 2H4M10 2v6"
+                  stroke="white"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Popular</div>
+          <div class="pricing-plan">Pro Plan</div>
+          <div class="pricing-price">$99 <span>/project</span></div>
+          <div class="pricing-tagline">
+            Ideal for businesses ready to scale.
+          </div>
+          <ul class="pricing-features">
+            <li>Full Visual Identity</li>
+            <li>Brand Strategy</li>
+            <li>Brand Style Guide</li>
+            <li>Social Media Kit (10 templates)</li>
+            <li>3 Revision Rounds</li>
+            <li>Advertising Creatives</li>
+          </ul>
+          <button class="pricing-btn pricing-btn-light">
+            Get in Touch
+            <span
+              class="btn-icon-sm"
+              style="
+                background: var(--orange);
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg viewBox="0 0 12 12" width="10" height="10">
+                <path
+                  d="M2 10L10 2M10 2H4M10 2v6"
+                  stroke="white"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-plan">Enterprise</div>
+          <div class="pricing-price">$299 <span>/project</span></div>
+          <div class="pricing-tagline">Complete branding solution.</div>
+          <ul class="pricing-features">
+            <li>Brand Strategy & Research</li>
+            <li>Full Brand Identity</li>
+            <li>Packaging Design</li>
+            <li>Full Social Media System</li>
+            <li>Advertising Campaign</li>
+            <li>Unlimited Revisions</li>
+          </ul>
+          <button class="pricing-btn pricing-btn-dark">
+            Get in Touch
+            <span
+              class="btn-icon-sm"
+              style="
+                background: var(--orange);
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg viewBox="0 0 12 12" width="10" height="10">
+                <path
+                  d="M2 10L10 2M10 2H4M10 2v6"
+                  stroke="white"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="testi-header reveal">
+        <div class="section-label">Testimonials</div>
+        <h2 class="section-title">What Clients Say</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "Professional, creative, and highly talented. The designs completely
+            elevated our brand image. Working with this studio was one of the
+            best decisions we made for our business."
+          </p>
+          <div class="testi-author">
+            <div
+              class="testi-avatar"
+              style="background: rgba(232, 73, 30, 0.15)"
+            >
+              <img src="./images/person1.jpg" alt="Amara Okafor" />
+            </div>
+            <div>
+              <div class="testi-name">Olatunji Joshua</div>
+              <div class="testi-role">CEO, Prospexdigitas</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "Attention to detail and creativity were exceptional from start to
+            finish. The deliverables exceeded every expectation and the process
+            was seamless and professional throughout."
+          </p>
+          <div class="testi-author">
+            <div
+              class="testi-avatar"
+              style="background: rgba(30, 100, 232, 0.15)"
+            >
+              <img src="./images/fola.jpeg" alt="Folashade Bukky" />
+            </div>
+            <div>
+              <div class="testi-name">Folashade Bukky</div>
+              <div class="testi-role">Founder, Nest by Bukky</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-2">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "High-quality visuals that truly helped our brand stand out. Our
+            social media engagement tripled within weeks of launching the new
+            designs. Absolutely worth every penny."
+          </p>
+          <div class="testi-author">
+            <div
+              class="testi-avatar"
+              style="background: rgba(30, 200, 100, 0.15)"
+            >
+              <img src="./images/person1.jpg" alt="Fatima Al-Hassan" />
+            </div>
+            <div>
+              <div class="testi-name">Fatima Al-Hassan</div>
+              <div class="testi-role">Marketing Director, Ela De Pure Co.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">
+            Let's Build Something<br /><span style="color: var(--orange)"
+              >Creative</span
+            >
+          </h2>
+          <p>
+            Looking for bold and impactful designs for your brand or business?
+            Let's work together to create visuals that capture attention and
+            leave lasting impressions.
+          </p>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Email Address</div>
+                <div class="contact-info-value">ayandokunamos@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.72 3.27 2 2 0 0 1 3.7 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.69a16 16 0 0 0 6.4 6.4l1.15-1.04a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Phone Number</div>
+                <div class="contact-info-value">+234 903 423 0549</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Location</div>
+                <div class="contact-info-value">Lagos, Nigeria 🇳🇬</div>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/creative_grid_?igsh=MXdnbmR2MGh1bHo4OA%3D%3D&utm_source=qr"
+              class="social-link"
+            >
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://www.behance.net/ayandokunamos" class="social-link">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22 7h-7V5h7zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.051-2.053-5.051-5.21.001-3.3 1.905-5.266 5.013-5.266 3.077 0 4.643 2.061 4.714 4.822.005.309-.036.645-.072.883H15.12c.069 1.145.557 2.033 2.446 2.033.916 0 1.534-.288 1.856-.821l2.304.559zM15.17 14h4.739c-.127-1.4-.969-2.076-2.352-2.076-1.297 0-2.138.717-2.387 2.076zM7.501 10.063C9.803 9.967 11 8.787 11 7.15 11 5.361 9.765 4 6.983 4H2v16h5.188c3.55 0 5.014-1.826 5.014-3.906 0-2.018-1.405-3.24-4.701-3.031zM5.5 7H7c1.178 0 1.938.403 1.938 1.394 0 .967-.738 1.358-1.938 1.358H5.5V7zm0 9.5v-3H7.5c1.476 0 2.17.51 2.17 1.5s-.694 1.5-2.17 1.5H5.5z"
+                />
+              </svg>
+            </a>
+            <a href="https://x.com/FolahanAmos" class="social-link">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ayandokun-folahan/"
+              class="social-link"
+            >
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="https://dribbble.com/Amos_Ux" class="social-link">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">First Name</label>
+
+                <input
+                  type="text"
+                  name="first_name"
+                  class="form-input"
+                  placeholder="John"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Last Name</label>
+
+                <input
+                  type="text"
+                  name="last_name"
+                  class="form-input"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+
+              <input
+                type="email"
+                name="email"
+                class="form-input"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Service Needed</label>
+
+              <select
+                name="service"
+                class="form-input"
+                required
+                style="appearance: none"
+              >
+                <option value="">Select a service...</option>
+
+                <option>Brand Identity Design</option>
+
+                <option>Social Media Design</option>
+
+                <option>Flyer & Promotional Design</option>
+
+                <option>Advertising Creatives</option>
+
+                <option>Print & Packaging Design</option>
+
+                <option>Creative Direction</option>
+
+                <option>Web Design</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label"> Project Budget </label>
+
+              <select
+                name="budget"
+                class="form-input"
+                required
+                style="appearance: none"
+              >
+                <option value="">Select budget range...</option>
+
+                <option>₦50k – ₦100k</option>
+
+                <option>₦100k – ₦250k</option>
+
+                <option>₦250k – ₦500k</option>
+
+                <option>₦500k+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label"> Your Message </label>
+
+              <textarea
+                name="message"
+                class="form-textarea"
+                placeholder="Tell me about your project, goals, timeline, and any ideas you already have..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">
+              <span class="btn-text"> Send Inquiry </span>
+
+              <span class="btn-loader"></span>
+            </button>
+
+            <p id="form-status" class="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand reveal">
+            <a
+              href="#"
+              class="nav-logo"
+              style="display: inline-block; margin-bottom: 4px"
+            >
+              Studio <span style="color: var(--orange)">.</span> A
+            </a>
+            <p>
+              Showcasing bold, modern graphic design work through a professional
+              and creative portfolio experience.
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap">
+              <a
+                href="#"
+                class="social-link"
+                style="width: 36px; height: 36px; border-radius: 8px"
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="social-link"
+                style="width: 36px; height: 36px; border-radius: 8px"
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="social-link"
+                style="width: 36px; height: 36px; border-radius: 8px"
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="social-link"
+                style="width: 36px; height: 36px; border-radius: 8px"
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <path
+                    d="M22 7h-7V5h7zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.051-2.053-5.051-5.21.001-3.3 1.905-5.266 5.013-5.266 3.077 0 4.643 2.061 4.714 4.822.005.309-.036.645-.072.883H15.12c.069 1.145.557 2.033 2.446 2.033.916 0 1.534-.288 1.856-.821l2.304.559zM15.17 14h4.739c-.127-1.4-.969-2.076-2.352-2.076-1.297 0-2.138.717-2.387 2.076zM7.501 10.063C9.803 9.967 11 8.787 11 7.15 11 5.361 9.765 4 6.983 4H2v16h5.188c3.55 0 5.014-1.826 5.014-3.906 0-2.018-1.405-3.24-4.701-3.031zM5.5 7H7c1.178 0 1.938.403 1.938 1.394 0 .967-.738 1.358-1.938 1.358H5.5V7zm0 9.5v-3H7.5c1.476 0 2.17.51 2.17 1.5s-.694 1.5-2.17 1.5H5.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <div class="footer-nav-title">Contact</div>
+            <div class="footer-nav-links">
+              <a href="#">About Me</a>
+              <a href="#">My Process</a>
+              <a href="#">Programs & Packages</a>
+              <a href="#">Testimonials</a>
+            </div>
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="footer-nav-title">Services</div>
+            <div class="footer-nav-links">
+              <a href="#">Brand Identity</a>
+              <a href="#">Social Media Design</a>
+              <a href="#">Flyer & Promo Design</a>
+              <a href="#">Advertising Creatives</a>
+              <a href="#">Print & Packaging</a>
+            </div>
+          </div>
+          <div class="reveal reveal-delay-3">
+            <div class="footer-nav-title">Portfolio</div>
+            <div class="footer-nav-links">
+              <a href="#">All Projects</a>
+              <a href="#">Featured Work</a>
+              <a href="#">Case Studies</a>
+            </div>
+            <div class="footer-pill-nav" style="margin-top: 24px">
+              <a href="#home" class="footer-pill">Home</a>
+              <a href="#services" class="footer-pill">Services</a>
+              <a href="#portfolio" class="footer-pill">Portfolio</a>
+              <a href="#contact" class="footer-pill">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-copy"
+            >© 2025 Studio.A Creative Portfolio. All rights reserved.</span
+          >
+          <span class="footer-copy">Designed with passion in Lagos 🇳🇬</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
