@@ -1,6 +1,25 @@
 /* =========================================
    PROJECTS.JS
 ========================================= */
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("img").forEach((img) => {
+    const src = img.getAttribute("src");
+
+    if (!src) return;
+
+    if (!src.startsWith("./images/")) return;
+
+    // remove "./images/"
+    let filename = src.replace("./images/", "");
+
+    // remove extension
+    filename = filename.replace(/\.(jpg|jpeg|png|webp)$/i, "");
+
+    img.src = CLOUDINARY.image(filename);
+
+    img.loading = "lazy";
+  });
+});
 
 function toggleMenu() {
   document.getElementById("mobileMenu").classList.toggle("open");
