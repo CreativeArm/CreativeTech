@@ -589,7 +589,7 @@ section > * > .inner {
 .about-portrait-inner {
   width: 100%;
   height: 100%;
-  background-image: url(/images/amos2.png);
+  background-image: url(https://res.cloudinary.com/dsec6tlnk/image/upload/v1784023663/amos2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
